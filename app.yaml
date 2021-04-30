@@ -1,0 +1,7 @@
+runtime: nodejs12 # or another supported version
+instance_class: F1 # this is the cheapest option
+env_variables:
+  MYSQL_USER: 'root'
+  MYSQL_PASSWORD: 'databaseconissuers'
+  MYSQL_DB: 'spotify_team_database'
+  MYSQL_HOST: '35.226.161.246'
