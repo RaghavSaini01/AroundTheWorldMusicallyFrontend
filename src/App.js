@@ -11,7 +11,7 @@ function App() {
 
   const findSongSrutiQuery = () => {
   Axios
-    .post('http://localhost:3005/api/findSongNameSrutiQuery', {songName: songName})
+    .post('https://around-the-world-musically.uc.r.appspot.com/api/findSongNameSrutiQuery', {songName: songName})
     .then(res => {
       console.log(res.data)
       setSrutiQueriedSong([
@@ -23,7 +23,7 @@ function App() {
 
   const findSongRishinQuery = () => {
   Axios
-    .post('http://localhost:3005/api/findSongNameRishinQuery', {songName: songName})
+    .post('https://around-the-world-musically.uc.r.appspot.com/api/findSongNameRishinQuery', {songName: songName})
     .then(res => {
       console.log(res.data)
       setRishinQueriedSong([
