@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   
-  const [genreName, setGenreName] =  useState('');
+  //const [genreName, setGenreName] =  useState('');
   const [songName, setSongName] =  useState('');
   const [srutiQueriedSong, setSrutiQueriedSong] =  useState([]);
   const [rishinQueriedSong, setRishinQueriedSong] =  useState([]);
@@ -75,17 +75,6 @@ function App() {
       );
     })}
 
-    </div>
-
-    <div className="Input_Div">
-    <label id="Genre_Label"> Genre: </label>
-
-    <input type="text" name="artistName"/>
-
-    <br></br>
-    <br></br>
-
-    <button id="Submit_Artist_Name"> Insert</button>
     </div>
   </div>
   );
