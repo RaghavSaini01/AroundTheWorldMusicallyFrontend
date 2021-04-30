@@ -4,11 +4,11 @@ import './App.css';
 /*comment*/
 function App() {
   
-  const [genreName, setGenreName] =  useState('');
+  //const [genreName, setGenreName] =  useState('');
   const [songName, setSongName] =  useState('');
   const [srutiQueriedSong, setSrutiQueriedSong] =  useState([]);
   const [rishinQueriedSong, setRishinQueriedSong] =  useState([]);
-
+  const [genreName, setGenreName] =  useState('');
 
   const [genreList, setGenreList] = useState([]);
   const [queriedGenreName, setQueriedGenreName] =  useState([]);
@@ -138,6 +138,7 @@ function App() {
 
     </div>
 
+
     <div className="Input_Div">
     <label id="Genre_Label"> Genre: </label>
 
@@ -150,6 +151,8 @@ function App() {
 
     <button onClick={submitGenre}> Submit New Genre Name</button>
     </div>
+
+
   </div>
   );
 }
