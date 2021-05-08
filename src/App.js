@@ -16,7 +16,7 @@ function App() {
 
   const findSongSrutiQuery = () => {
   Axios
-    .post('https://around-the-world-musically.uc.r.appspot.com/api/findSongNameSrutiQuery', {songName: songName})
+    .post('http://localhost:3005/api/findSongNameSrutiQuery', {songName: songName})
     .then(res => {
       console.log(res.data)
       setSrutiQueriedSong([
@@ -28,7 +28,7 @@ function App() {
 
   const findSongRishinQuery = () => {
   Axios
-    .post('https://around-the-world-musically.uc.r.appspot.com/api/findSongNameRishinQuery', {songName: songName})
+    .post('http://localhost:3005/api/findSongNameRishinQuery', {songName: songName})
     .then(res => {
       console.log(res.data)
       setRishinQueriedSong([
@@ -39,7 +39,7 @@ function App() {
   };
 
   const submitGenre = () => { 
-    Axios.post('https://around-the-world-musically.uc.r.appspot.com/api/insert', {
+    Axios.post('http://localhost:3005/api/insert', {
       genreName: genreName
     });
     
@@ -52,11 +52,11 @@ function App() {
   };
 
   const deleteGenre = (genreName) => {
-    Axios.delete(`https://around-the-world-musically.uc.r.appspot.com/api/delete/${genreName}`);
+    Axios.delete(`http://localhost:3005/api/delete/${genreName}`);
   };
 
   const updateGenre = (genreName) => {
-    Axios.put(`https://around-the-world-musically.uc.r.appspot.com/api/update`, {
+    Axios.put(`http://localhost:3005/api/update`, {
       genreName: genreName,
       newGenre: newGenre
     });
